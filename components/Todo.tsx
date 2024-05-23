@@ -59,8 +59,7 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor:'lightgreen',
         // height:'100%'
-        padding:10
-    },
+        },
 input:{
     margin:10,
     borderWidth:1,

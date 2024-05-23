@@ -1,14 +1,16 @@
 import React from 'react';
 import Todo from './components/Todo.tsx'
 import ApiDataCalling from './components/ApiDataCalling.tsx';
-import { ScrollView } from 'react-native';
+import { ScrollView , SafeAreaView} from 'react-native';
 
 function App(): React.JSX.Element {
  return (
+  <SafeAreaView>
   <ScrollView>
 <Todo />
 <ApiDataCalling />
   </ScrollView>
+  </SafeAreaView>
   );
 }
 
