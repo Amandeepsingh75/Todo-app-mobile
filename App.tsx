@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import { ScrollView } from 'react-native';
+import React from 'react';
 import Todo from './components/Todo.tsx'
+import ApiDataCalling from './components/ApiDataCalling.tsx';
+import { ScrollView } from 'react-native';
 
 function App(): React.JSX.Element {
  return (
-  <>
+  <ScrollView>
 <Todo />
-  </>
+<ApiDataCalling />
+  </ScrollView>
   );
 }
 
