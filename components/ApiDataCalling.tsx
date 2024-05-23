@@ -1,4 +1,4 @@
-import { View, Text , ActivityIndicator } from 'react-native'
+import { View, Text , ActivityIndicator , Image} from 'react-native'
 import React, { useEffect, useState } from 'react'
 // Using ActivityIndicator to show loading on api reloading time
 
@@ -32,7 +32,14 @@ export default function ApiDataCalling() {
     },[])
   return (
     <View style={{margin:10}}>
-      <Text>Api Data :-</Text>
+
+      {/*  use of Image tag  (good way to use is using require) */}
+     {/* <Image source={require('./my-icon.png')} /> */}
+     
+      {/*  use of Image tag with url (uri) */}
+      <Image source={{uri: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'}} style={{width: '100%', height: 300 ,
+    resizeMode:'cover'}} />
+      <Text>Api Data :</Text>
 
       {/* here we are using simple map function we can also use flatlist .
        which are best for performance for larger data */}
