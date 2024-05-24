@@ -8,7 +8,6 @@ function App(): React.JSX.Element {
   <SafeAreaView>
   <ScrollView>
 <Todo />
-<ApiDataCalling />
   </ScrollView>
   </SafeAreaView>
   );
