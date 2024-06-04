@@ -1,14 +1,14 @@
 import React from 'react';
 import Todo from './components/Todo.tsx'
-import { ScrollView , SafeAreaView} from 'react-native';
+import { ScrollView, SafeAreaView } from 'react-native';
 
 function App(): React.JSX.Element {
- return (
-  <SafeAreaView>
-  <ScrollView>
-<Todo />
-  </ScrollView>
-  </SafeAreaView>
+  return (
+    <ScrollView>
+      <SafeAreaView>
+        <Todo />
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 

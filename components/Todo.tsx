@@ -16,7 +16,7 @@ const handleDelete =(id :number)=>{
 setTasks(tasks.filter((_ , i) => i !== id))
 }
 return (
-<View style={styles.container}>
+<View>
 <TextInput
         placeholder="Enter your Task"
         style={styles.input}
@@ -56,10 +56,6 @@ return (
 }
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:'lightgreen',
-        // height:'100%'
-        },
 input:{
     margin:10,
     borderWidth:1,
